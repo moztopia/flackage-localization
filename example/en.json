@@ -1,0 +1,7 @@
+{
+  "example": {
+    "welcome": "Welcome to the localization example",
+    "language": "Language",
+    "preview": "This text changes with the selected language."
+  }
+}

@@ -1,4 +1,4 @@
-# Moztopia Localization
+# Flackage Localization
 
 This repository is the central source for translation catalogs used by Moztopia applications.
 
@@ -7,8 +7,8 @@ Each application owns a directory containing one JSON catalog per supported loca
 ## Repository structure
 
 ```text
-localization/
-├── example/
+flackage-localization/
+├── example.everything/
 │   ├── de.json
 │   ├── en.json
 │   ├── es.json
@@ -30,8 +30,8 @@ Each top-level application directory provides an independent set of translation 
 For example:
 
 ```text
-example/en.json
-example/th.json
+example.everything/en.json
+example.everything/th.json
 ```
 
 ## Catalog format
@@ -72,14 +72,14 @@ Locale filenames are lowercase and use the locale code expected by the consuming
 Applications retrieve catalogs through GitHub’s raw-content endpoint:
 
 ```text
-https://raw.githubusercontent.com/moztopia/localization/<reference>/<application>/<locale>.json
+https://raw.githubusercontent.com/moztopia/flackage-localization/<reference>/<application>/<locale>.json
 ```
 
 Examples:
 
 ```text
-https://raw.githubusercontent.com/moztopia/localization/main/example/en.json
-https://raw.githubusercontent.com/moztopia/localization/main/example/th.json
+https://raw.githubusercontent.com/moztopia/flackage-localization/main/example.everything/en.json
+https://raw.githubusercontent.com/moztopia/flackage-localization/main/example.everything/th.json
 ```
 
 `<reference>` may be:
@@ -90,51 +90,28 @@ https://raw.githubusercontent.com/moztopia/localization/main/example/th.json
 
 ## Flackage configuration
 
-A Flutter application using Flackage can describe its local and remote sources in `assets/localization.config.yaml`:
+A Flutter application using Flackage can enable this remote source in
+`assets/flackage/localization.config.yaml`:
 
 ```yaml
-fallbackSource: language
-
-localSource: assets
-localPath: translations
-
-remoteSource: git
-remoteRepository: https://github.com/moztopia/localization
-remotePath: example
+remoteEnabled: true
+remoteLoadMode: background
+remoteRepository: https://github.com/moztopia/flackage-localization
+remotePath: example.everything
 remoteReference: main
-
-languages:
-  - locale: en
-    name: English
-    label: EN
-  - locale: th
-    name: ไทย
-    label: TH
-  - locale: es
-    name: Español
-    label: ES
-  - locale: zh
-    name: 中文
-    label: ZH
-  - locale: ru
-    name: Русский
-    label: RU
-  - locale: my
-    name: မြန်မာ
-    label: MY
-  - locale: fr
-    name: Français
-    label: FR
-  - locale: de
-    name: Deutsch
-    label: DE
 ```
 
-The corresponding bundled fallback catalogs are stored in the application:
+Flackage package defaults already provide `remoteSource: git`, this repository
+URL, the `main` reference, and background loading. The comprehensive example
+only needs `remoteEnabled: true` because its default `remotePath` is
+`example.everything`.
+
+Bundled catalogs are stored directly in the consuming application’s Flackage
+asset directory:
 
 ```text
-assets/translations/en.json
-assets/translations/th.json
+assets/flackage/en.json
+assets/flackage/th.json
 ```
 
 The intended loading hierarchy is:
@@ -201,7 +178,7 @@ Do not rename or remove an existing key without coordinating the corresponding a
 Validate an individual catalog with `jq`:
 
 ```shell
-jq empty example/en.json
+jq empty example.everything/en.json
 ```
 
 Validate all JSON catalogs:
@@ -214,10 +191,10 @@ Compare key paths against English:
 
 ```shell
 jq -r '[paths(scalars) | map(tostring) | join(".")] | sort | .[]' \
-  example/en.json > /tmp/en.keys
+  example.everything/en.json > /tmp/en.keys
 
 jq -r '[paths(scalars) | map(tostring) | join(".")] | sort | .[]' \
-  example/th.json > /tmp/th.keys
+  example.everything/th.json > /tmp/th.keys
 
 diff -u /tmp/en.keys /tmp/th.keys
 ```

@@ -1,0 +1,20 @@
+name: Localization defect
+description: Report a catalog, language registry, or translation issue.
+title: "[Bug]: "
+labels: ["bug"]
+projects: ["moztopia/6"]
+type: bug
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is incorrect?
+    validations:
+      required: true
+  - type: input
+    id: locale
+    attributes:
+      label: Locale and translation key
+      placeholder: "e.g. th / settings.title"
+    validations:
+      required: true

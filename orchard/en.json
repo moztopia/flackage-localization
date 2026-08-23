@@ -81,7 +81,7 @@
         "photo": "Add your best photo",
         "essentials": "Tell people who you are",
         "preferences": "What do you seek?",
-        "optional": "Add a little more",
+        "optional": "Tell us a little more",
         "interests": "What lights you up?"
       },
       "intro": {
@@ -90,7 +90,7 @@
         "photo": "Choose a clear portrait photo of yourself that shows your face.",
         "essentials": "These details create the profile people will see in discovery.",
         "preferences": "Set your starting discovery preferences. You can change these anytime.",
-        "optional": "These details are optional and can be hidden or changed later.",
+        "optional": "Some people filter for the details that matter to them. Sharing yours honestly helps the right people find you—and helps avoid surprises later.",
         "interests": "Choose 3–5 interests to help people find a genuine opening."
       },
       "validationConsent": "Confirm all three items before continuing.",
@@ -204,7 +204,7 @@
       "datingIntentDetail": "Choose your dating intent.",
       "searchSummaryTitle": "Your search",
       "searchSummaryDetail": "Discover will use these preferences. Edit them anytime.",
-      "optionalNotice": "Optional means optional. Skip anything you do not want on your public profile.",
+      "optionalHeading": "A little more about you",
       "relationship": "Relationship style",
       "smoking": "Smoking",
       "drinking": "Drinking",

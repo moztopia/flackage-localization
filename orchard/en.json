@@ -1,31 +1,30 @@
 {
   "language": "Language",
-  "preview": "Preview the application in the selected language.",
+  "preview": "Use the selected language throughout Orchard.",
   "orchard": {
-    "app": {"tagline": "Meet with intention", "previewNotice": "Synthetic preview data · no backend connection"},
+    "app": {"tagline": "Meet with intention"},
     "auth": {
-      "preview": "OAuth design preview",
       "heading": "Meet with intention",
-      "intro": "Sign in to continue to Orchard. This review build uses local preview state only.",
+      "intro": "Sign in to continue to Orchard.",
       "google": "Continue with Google",
-      "working": "Opening Google sign-in preview…",
+      "working": "Opening Google sign-in…",
       "agreement": "By continuing, you agree to Orchard's terms and privacy policy.",
-      "failed": "The sign-in preview could not continue.",
+      "failed": "Google sign-in could not continue.",
       "retry": "Try again"
     },
     "nav": {"discover": "Discover", "matches": "Matches", "inbox": "Inbox", "you": "You"},
-    "common": {"designPreview": "Design preview", "previewOnly": "preview only", "savePreview": "Save preview", "savedLocally": "Saved in this local preview", "enabled": "Enabled", "disabled": "Disabled"},
+    "common": {"save": "Save", "saved": "Saved", "enabled": "Enabled", "disabled": "Disabled"},
     "drawer": {
       "safety": "Safety center", "safetyMessage": "Guidance, boundaries, and support tools live here.",
       "help": "Help and support", "helpMessage": "Find answers or contact the Orchard support team.",
       "about": "About Orchard", "aboutMessage": "A calmer place to meet people worth meeting.",
-      "configuration": "Preview configuration", "configurationMessage": "Inspect the app and package configuration used by this review build.",
-      "logging": "Logging preview", "loggingMessage": "Developer-only logging examples retained from the existing shell."
+      "configuration": "Configuration", "configurationMessage": "Inspect Orchard and package configuration.",
+      "logging": "Logging", "loggingMessage": "Inspect Orchard logging behavior."
     },
     "discover": {
-      "previewBadge": "Synthetic profile preview", "preferences": "Discovery preferences", "freshPick": "Fresh pick",
+      "preferences": "Discovery preferences", "freshPick": "Fresh pick",
       "viewDetails": "View {name} profile details", "pass": "Pass", "star": "Send a star", "like": "Like",
-      "passed": "Passed", "starred": "Starred", "liked": "Liked", "actionResult": "{action} {name} · preview only",
+      "passed": "Passed", "starred": "Starred", "liked": "Liked", "actionResult": "{action} {name}",
       "tapCard": "Tap the card to see the full profile", "heading": "Meet someone worth meeting",
       "viewFullProfile": "View full profile", "safetyNote": "Stay curious, move at your pace, and use block or report whenever you need it."
     },
@@ -35,12 +34,12 @@
     },
     "inbox": {"heading": "Conversations", "intro": "Good conversations start with genuine curiosity.", "search": "Search conversations", "noResults": "No conversations match that search."},
     "conversation": {
-      "matchedRecently": "Matched recently", "safetyActions": "Safety actions", "synthetic": "Synthetic conversation",
-      "matched": "You matched with {name}", "addPhoto": "Add photo", "writeMessage": "Write a message",
-      "send": "Send message", "sentPreview": "Message added to this local preview"
+      "matchedRecently": "Matched recently", "safetyActions": "Safety actions",
+      "matched": "You matched with {name}", "writeMessage": "Write a message",
+      "send": "Send message", "sent": "Message sent"
     },
     "you": {
-      "previewAccount": "Preview account", "editPhoto": "Edit profile photo", "profileVisible": "Profile visible",
+      "onboarding": "Onboarding", "editPhoto": "Edit profile photo", "profileVisible": "Profile visible",
       "profileStrength": "Profile strength", "strengthHint": "Add one more prompt to help people start a conversation.", "addPrompt": "Add a profile prompt",
       "yourOrchard": "Your Orchard", "editProfile": "Edit profile", "editProfileSubtitle": "Photos, bio, prompts, and details",
       "discovery": "Discovery preferences", "discoverySubtitle": "Who you would like to meet", "visibility": "Visibility", "visibilitySubtitle": "Shown in discovery",
@@ -54,16 +53,14 @@
     },
     "modal": {
       "editProfile": "Edit profile", "editProfileIntro": "Shape the details people see in your Orchard profile.", "displayName": "Display name", "bio": "Bio",
-      "editPhotos": "Edit photos", "editPhotosIntro": "Choose a lead photo for this local design preview.", "leadPhoto": "Lead photo",
+      "editPhotos": "Edit photos", "editPhotosIntro": "Choose your lead profile photo.", "leadPhoto": "Lead photo",
       "editPrompts": "Edit prompts", "editPromptsIntro": "Prompts make it easier to begin a genuine conversation.", "prompt": "Profile prompt",
-      "discovery": "Discovery preferences", "discoveryIntro": "Adjust who appears in this local discovery preview.", "ageRange": "Age range", "distance": "Maximum distance", "verifiedOnly": "Show verified profiles only",
-      "visibility": "Visibility", "visibilityIntro": "Control whether this preview profile appears in discovery.", "showProfile": "Show my profile", "recentActivity": "Show recent activity",
+      "discovery": "Discovery preferences", "discoveryIntro": "Adjust who appears in discovery.", "ageRange": "Age range", "distance": "Maximum distance", "verifiedOnly": "Show verified profiles only",
+      "visibility": "Visibility", "visibilityIntro": "Control whether your profile appears in discovery.", "showProfile": "Show my profile", "recentActivity": "Show recent activity",
       "safety": "Safety center", "safetyIntro": "Move at your pace. You can block or report from every conversation and profile.", "block": "Block a profile", "report": "Report a concern", "guidance": "Dating safety guidance",
-      "notifications": "Notifications", "notificationsIntro": "Choose which local preview reminders are active.", "newMatches": "New matches", "messages": "Messages", "tips": "Profile tips",
-      "account": "Account settings", "accountIntro": "Orchard uses OAuth sign-in. These controls are a design preview only.", "signInMethod": "Sign-in method", "oauth": "OAuth provider", "sessions": "Active sessions", "privacy": "Privacy and agreements",
-      "conversationMedia": "Choose a photo", "conversationMediaIntro": "Select a synthetic image to add to this conversation preview.", "selected": "Selected"
+      "notifications": "Notifications", "notificationsIntro": "Choose which reminders are active.", "newMatches": "New matches", "messages": "Messages", "tips": "Profile tips",
+      "account": "Account settings", "accountIntro": "Orchard uses OAuth sign-in. Manage your account and sessions here.", "signInMethod": "Sign-in method", "oauth": "OAuth provider", "sessions": "Active sessions", "privacy": "Privacy and agreements"
     },
     "notFound": {"title": "Page not found", "message": "Orchard could not find {location}.", "return": "Return to Discover"}
   }
 }
-

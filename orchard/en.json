@@ -82,7 +82,7 @@
         "essentials": "Tell people who you are",
         "preferences": "What do you seek?",
         "optional": "Tell us a little more",
-        "interests": "What lights you up?"
+        "interests": "What are you into?"
       },
       "intro": {
         "language": "You can change this later. English remains the fallback language.",
@@ -91,7 +91,7 @@
         "essentials": "These details create the profile people will see in discovery.",
         "preferences": "Set your starting discovery preferences. You can change these anytime.",
         "optional": "Some people filter for the details that matter to them. Sharing yours honestly helps the right people find you—and helps avoid surprises later.",
-        "interests": "Choose 3–5 interests to help people find a genuine opening."
+        "interests": "Your interests help people find you in Explore. Add real interests to be found and make real connections."
       },
       "validationConsent": "Confirm all three items before continuing.",
       "validationPhoto": "Choose one photo before continuing.",
@@ -209,6 +209,7 @@
       "smoking": "Smoking",
       "drinking": "Drinking",
       "prompt": "A conversation prompt",
+      "interestsHeading": "Choose 3–5 interests",
       "interestCount": "{count} of {max} selected",
       "reviewIntro": "Check your whole profile before completing onboarding.",
       "photoReady": "Profile photo selected",

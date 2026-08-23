@@ -77,7 +77,7 @@
       "edit": "Edit",
       "stage": {
         "language": "Choose your language",
-        "consent": "Start with clear consent",
+        "consent": "Review and agree",
         "photo": "Add your best photo",
         "essentials": "Tell people who you are",
         "preferences": "What do you seek?",
@@ -85,8 +85,8 @@
         "interests": "What are you into?"
       },
       "intro": {
-        "language": "You can change this later. English remains the fallback language.",
-        "consent": "Orchard should feel intentional, public, and safe before discovery begins.",
+        "language": "Choose the language you want to use in this app.",
+        "consent": "Review each commitment before you agree and continue.",
         "photo": "Choose a clear portrait photo of yourself that shows your face.",
         "essentials": "These details create the profile people will see in discovery.",
         "preferences": "Set your starting discovery preferences. You can change these anytime.",

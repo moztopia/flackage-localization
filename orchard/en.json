@@ -165,6 +165,7 @@
       "identity": "I identify as",
       "orientation": "Orientation",
       "bio": "About me",
+      "bioHint": "Tell others about yourself…",
       "myLocation": "My location",
       "gps": "GPS",
       "manual": "Manual",

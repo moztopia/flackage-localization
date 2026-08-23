@@ -49,7 +49,7 @@
       "account": "Account settings", "accountSubtitle": "Sessions, privacy, and account controls"
     },
     "profile": {
-      "fullProfile": "Full profile2", "about": "About", "interests": "Interests", "promptHeading": "A good conversation starts here",
+      "fullProfile": "Full profile3", "about": "About", "interests": "Interests", "promptHeading": "A good conversation starts here",
       "prompt": "The quickest way to win me over is curiosity and a great neighborhood recommendation.", "likeName": "Like {name}"
     },
     "modal": {
